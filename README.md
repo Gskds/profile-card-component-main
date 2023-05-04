@@ -29,8 +29,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://github.com/Gskds/profile-card-component-main)
+- Live Site URL: [live site URL](https://transcendent-marzipan-53130e.netlify.app/)
 
 ## My process
 
