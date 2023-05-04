@@ -1,0 +1,137 @@
+/* Custom properties */
+:root {
+  --bg-body: hsl(185, 75%, 39%);
+  --bg-card-header: hsl(185, 75%, 50%);
+  --bg-card-body: hsl(0, 0%, 100%);
+
+  --clr-text: hsl(227, 10%, 46%);
+  --clr-heading: hsl(229, 23%, 23%);
+  --clr-line: hsl(0, 0%, 59%);
+
+  --ff-body: 'Kumbh Sans', sane-sarif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 0.8rem;
+  --fs-500: 1.125rem;
+  --fs-700: 1.25rem;
+}
+
+/* Bsice Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Typography */
+body {
+  background-color: var(--bg-body);
+  color: var(--clr-text);
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular)
+}
+
+h1,
+h2 {
+  color: var(--clr-heading);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+}
+
+h1 span {
+  color: var(--clr-text);
+  font-weight: var(--fw-regular);
+}
+
+hr {
+  color: var(--clr-line);
+}
+
+/* Utility Class*/
+body {
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 34vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: 50em) {
+  body {
+      background-position: right 40vw bottom 50vh, left 40vw top 50vh;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem auto;
+  max-width: 80rem;
+}
+
+/* Card */
+.card {
+  display: grid;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 18.6875rem;
+  box-shadow: 0 60px 80px rgba(0,0,0,.16);
+}
+
+.card__header {
+  background-color: var(--bg-card-header);
+  position: relative;
+}
+
+.card__header::before {
+  content: "";
+  background: url(/images/bg-pattern-card.svg);
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.card__body {
+  background-color: var(--bg-card-body);
+  padding-top: 45px;
+}
+
+.profile-picture {
+  position: relative;
+  top: 60%;
+  left: 33%;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.user {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 6px;
+}
+
+.social-stats {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: flex-end;
+  justify-content: center;
+}
